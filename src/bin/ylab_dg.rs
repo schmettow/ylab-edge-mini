@@ -31,7 +31,7 @@ fn main() -> ! {
     let a4 = pins.a4.into_analog_input(&mut adc);
     let a5 = pins.a5.into_analog_input(&mut adc);
 
-    let mut tick: i16 = 0;
+    let mut tick: i32 = 0;
 
     loop {
         // Arduino Nano has two more ADC pins A6 and A7.  Accessing them works a bit different from
